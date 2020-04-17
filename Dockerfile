@@ -21,5 +21,5 @@ RUN /root/.cargo/bin/cargo install evcxr_jupyter
 RUN /root/.cargo/bin/evcxr_jupyter --install
 ADD ./run.sh /run.sh
 WORKDIR /notebooks
-EXPOSE 8844
+EXPOSE 1337
 ENTRYPOINT [ "/run.sh" ]
